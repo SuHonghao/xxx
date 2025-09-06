@@ -1,0 +1,585 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>card</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <section class="card-list">
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://openaccess.thecvf.com/content/CVPR2025/html/Chen_G3Flow_Generative_3D_Semantic_Flow_for_Pose-aware_and_Generalizable_Object_CVPR_2025_paper.html" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/G3Flow_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://openaccess.thecvf.com/content/CVPR2025/html/Chen_G3Flow_Generative_3D_Semantic_Flow_for_Pose-aware_and_Generalizable_Object_CVPR_2025_paper.html" target="_blank" rel="noopener">G3Flow: Generative 3D Semantic Flow for Pose-aware and Generalizable Object Manipulation</a>
+        </h4>
+        <p class="cite-brief">Recent advances in imitation learning for 3D robotic manipulation have shown promising results with diffusion-based policies. However, achieving human-level dexterity requires seamless integration of geometric precision and semantic understanding. We present G3Flow, a novel framework that constructs real-time semantic flow, a dynamic, object-centric 3D semantic representation by leveraging foundation models. Our approach uniquely combines 3D generative models for digital twin creation, vision foundation models for semantic feature extraction, and robust pose tracking for continuous semantic flow updates. This integration enables complete semantic understanding even under occlusions while eliminating manual annotation requirements. By incorporating semantic flow into diffusion policies, we demonstrate significant improvements in both terminal-constrained manipulation and cross-object generalization. Extensive experiments across five simulation tasks show that G3Flow consistently outperforms existing approaches, achieving up to 68.3% and 50.1% average success rates on terminal-constrained manipulation and cross-object generalization tasks respectively. Our results demonstrate the effectiveness of G3Flow in enhancing real-time dynamic semantic feature understanding for robotic manipulation policies.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">Semantic Flow</span><span class="tag">Diffusion Policies</span><span class="tag">3D Robotic Manipulation</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://openaccess.thecvf.com/content/CVPR2025/html/Mu_RoboTwin_Dual-Arm_Robot_Benchmark_with_Generative_Digital_Twins_CVPR_2025_paper.html" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/RoboTwin_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://openaccess.thecvf.com/content/CVPR2025/html/Mu_RoboTwin_Dual-Arm_Robot_Benchmark_with_Generative_Digital_Twins_CVPR_2025_paper.html" target="_blank" rel="noopener">RoboTwin: Dual-Arm Robot Benchmark with Generative Digital Twins</a>
+        </h4>
+        <p class="cite-brief">In the rapidly advancing field of robotics, dual-arm coordination and complex object manipulation are essential capabilities for developing advanced autonomous systems. However, the scarcity of diverse, high-quality demonstration data and real-world-aligned evaluation benchmarks severely limits such development. To address this, we introduce RoboTwin, a generative digital twin framework that uses 3D generative foundation models and large language models to produce diverse expert datasets and provide a real-world-aligned evaluation platform for dual-arm robotic tasks. Specifically, RoboTwin creates varied digital twins of objects from single 2D images, generating realistic and interactive scenarios. It also introduces a spatial relation-aware code generation framework that combines object annotations with large language models to break down tasks, determine spatial constraints, and generate precise robotic movement code. Our framework offers a comprehensive benchmark with both simulated and real-world data, enabling standardized evaluation and better alignment between simulated training and real-world performance. We validated our approach using the open-source COBOT Magic Robot platform. Policies pre-trained on RoboTwin-generated data and fine-tuned with limited real-world samples demonstrate significant potential for enhancing dual-arm robotic manipulation systems by improving success rates by over 70% for single-arm tasks and over 40% for dual-arm tasks compared to models trained solely on real-world data.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">Embodied AI</span><span class="tag">Dual-Arm</span><span class="tag">RoboTwin</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2503.07511" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/PointVLA_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2503.07511" target="_blank" rel="noopener">PointVLA: Injecting the 3D World into Vision-Language-Action Models</a>
+        </h4>
+        <p class="cite-brief">Vision-Language-Action (VLA) models excel at robotic tasks by leveraging large-scale 2D vision-language pretraining, but their reliance on RGB images limits spatial reasoning critical for real-world interaction. Retraining these models with 3D data is computationally prohibitive, while discarding existing 2D datasets wastes valuable resources. To bridge this gap, we propose PointVLA, a framework that enhances pre-trained VLAs with point cloud inputs without requiring retraining. Our method freezes the vanilla action expert and injects 3D features via a lightweight modular block. To identify the most effective way of integrating point cloud representations, we conduct a skip-block analysis to pinpoint less useful blocks in the vanilla action expert, ensuring that 3D features are injected only into these blocks--minimizing disruption to pre-trained representations.
+Extensive experiments demonstrate that PointVLA outperforms state-of-the-art 2D imitation learning methods, such as OpenVLA, Diffusion Policy and DexVLA, across both simulated and real-world robotic tasks. Specifically, we highlight several key advantages of PointVLA enabled by point cloud integration: (1) Few-shot multi-tasking, where PointVLA successfully performs four different tasks using only 20 demonstrations each; (2) Real-vs-photo discrimination, where PointVLA distinguishes real objects from their images, leveraging 3D world knowledge to improve safety and reliability; (3) Height adaptability, Unlike conventional 2D imitation learning methods, PointVLA enables robots to adapt to objects at varying table height that unseen in train data. Furthermore, PointVLA achieves strong performance in long-horizon tasks, such as picking and packing objects from a moving conveyor belt, showcasing its ability to generalize across complex, dynamic environments.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">PointVLA</span><span class="tag">Vision-Language-Action Models</span><span class="tag">Point Cloud Integration</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://openaccess.thecvf.com/content/CVPR2025/html/Liang_DexHandDiff_Interaction-aware_Diffusion_Planning_for_Adaptive_Dexterous_Manipulation_CVPR_2025_paper.html" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/DexHandDiff_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://openaccess.thecvf.com/content/CVPR2025/html/Liang_DexHandDiff_Interaction-aware_Diffusion_Planning_for_Adaptive_Dexterous_Manipulation_CVPR_2025_paper.html" target="_blank" rel="noopener">DexHandDiff: Interaction-aware Diffusion Planning for Adaptive Dexterous Manipulation</a>
+        </h4>
+        <p class="cite-brief">Dexterous manipulation with contact-rich interactions is crucial for advanced robotics. While recent diffusion-based planning approaches show promise for simple manipulation tasks, they often produce unrealistic ghost states (e.g., the object automatically moves without hand contact) or lack adaptability when handling complex sequential interactions. In this work, we introduce DexHandDiff, an interaction-aware diffusion planning framework for adaptive dexterous manipulation. DexHandDiff models joint state-action dynamics through a dual-phase diffusion process which consists of pre-interaction contact alignment and post-contact goal-directed control, enabling goal-adaptive generalizable dexterous manipulation. Additionally, we incorporate dynamics model-based dual guidance and leverage large language models for automated guidance function generation, enhancing generalizability for physical interactions and facilitating diverse goal adaptation through language cues. Experiments on physical interaction tasks such as door opening, pen and block re-orientation, object relocation, and hammer striking demonstrate DexHandDiff's effectiveness on goals outside training distributions, achieving over twice the average success rate (59.2% vs. 29.5%) compared to existing methods. Our framework achieves an average of 70.7% success rate on goal adaptive dexterous tasks, highlighting its robustness and flexibility in contact-rich manipulation.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">DexHandDiff</span><span class="tag">Dexterous Manipulation</span><span class="tag">Diffusion Planning Framework</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2503.16408" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/RoboFactory_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2503.16408" target="_blank" rel="noopener">RoboFactory: Exploring Embodied Agent Collaboration with Compositional Constraints</a>
+        </h4>
+        <p class="cite-brief">Designing effective embodied multi-agent systems is critical for solving complex real-world tasks across domains. Due to the complexity of multi-agent embodied systems, existing methods fail to automatically generate safe and efficient training data for such systems. To this end, we propose the concept of compositional constraints for embodied multi-agent systems, addressing the challenges arising from collaboration among embodied agents. We design various interfaces tailored to different types of constraints, enabling seamless interaction with the physical world. Leveraging compositional constraints and specifically designed interfaces, we develop an automated data collection framework for embodied multi-agent systems and introduce the first benchmark for embodied multi-agent manipulation, RoboFactory. Based on RoboFactory benchmark, we adapt and evaluate the method of imitation learning and analyzed its performance in different difficulty agent tasks. Furthermore, we explore the architectures and training strategies for multi-agent imitation learning, aiming to build safe and efficient embodied multi-agent systems.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">Compositional Constraints</span><span class="tag">Embodied Multi-Agent Systems</span><span class="tag">RoboFactory Benchmark</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2501.14208" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/You Only Teach Once_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2501.14208" target="_blank" rel="noopener">You Only Teach Once: Learn One-Shot Bimanual Robotic Manipulation from Video Demonstrations</a>
+        </h4>
+        <p class="cite-brief">Bimanual robotic manipulation is a long-standing challenge of embodied intelligence due to its characteristics of dual-arm spatial-temporal coordination and high-dimensional action spaces. Previous studies rely on pre-defined action taxonomies or direct teleoperation to alleviate or circumvent these issues, often making them lack simplicity, versatility and scalability. Differently, we believe that the most effective and efficient way for teaching bimanual manipulation is learning from human demonstrated videos, where rich features such as spatial-temporal positions, dynamic postures, interaction states and dexterous transitions are available almost for free. In this work, we propose the YOTO (You Only Teach Once), which can extract and then inject patterns of bimanual actions from as few as a single binocular observation of hand movements, and teach dual robot arms various complex tasks. Furthermore, based on keyframes-based motion trajectories, we devise a subtle solution for rapidly generating training demonstrations with diverse variations of manipulated objects and their locations. These data can then be used to learn a customized bimanual diffusion policy (BiDP) across diverse scenes. In experiments, YOTO achieves impressive performance in mimicking 5 intricate long-horizon bimanual tasks, possesses strong generalization under different visual and spatial conditions, and outperforms existing visuomotor imitation learning methods in accuracy and efficiency. Our project link is this https URL.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">YOTO</span><span class="tag">Bimanual Robotic Manipulation</span><span class="tag">Diffusion Policy</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://www.tandfonline.com/doi/abs/10.1080/00207543.2025.2499866" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/Distributed multi-robot task_img.jpg" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://www.tandfonline.com/doi/abs/10.1080/00207543.2025.2499866" target="_blank" rel="noopener">Distributed multi-robot task dynamic allocation in digital-twin factory towards industry 5.0</a>
+        </h4>
+        <p class="cite-brief">Task allocation is a critical component in multi-robot manufacturing systems (MRMS), significantly affecting operational efficiency and system resilience. Within the framework of industry 5.0, which emphasises decentralised autonomous manufacturing and sustainability, traditional static and centralised task allocation methods prove inadequate for the dynamic and complex demands of contemporary manufacturing environments. To overcome these limitations, this study introduces a distributed multi-robot task dynamic allocation method for digital twin factories. We develop a digital twin-driven robot model, coupled with the task dynamic allocation process to facilitate real-time monitoring and anomaly resolution. To derive high-quality and scalable solutions within a decentralised framework, the Alternating Direction Method of Multipliers (ADMM) and Augmented Lagrangian Coordination (ALC) methods are employed to analyze and resolve task allocation challenges. The proposed methodology enhances system configurability and resilience, aligning with the sustainability objectives of industry 5.0. The efficacy and efficiency of the proposed method are demonstrated through a practical case study.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">Task Allocation</span><span class="tag">Multi-Robot Manufacturing Systems</span><span class="tag">Industry 5.0</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2503.14526" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/ReBot_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2503.14526" target="_blank" rel="noopener">ReBot: Scaling Robot Learning with Real-to-Sim-to-Real Robotic Video Synthesis</a>
+        </h4>
+        <p class="cite-brief">Vision-language-action (VLA) models present a promising paradigm by training policies directly on real robot datasets like Open X-Embodiment. However, the high cost of real-world data collection hinders further data scaling, thereby restricting the generalizability of VLAs. In this paper, we introduce ReBot, a novel real-to-sim-to-real approach for scaling real robot datasets and adapting VLA models to target domains, which is the last-mile deployment challenge in robot manipulation. Specifically, ReBot replays real-world robot trajectories in simulation to diversify manipulated objects (real-to-sim), and integrates the simulated movements with inpainted real-world background to synthesize physically realistic and temporally consistent robot videos (sim-to-real). Our approach has several advantages: 1) it enjoys the benefit of real data to minimize the sim-to-real gap; 2) it leverages the scalability of simulation; and 3) it can generalize a pretrained VLA to a target domain with fully automated data pipelines. Extensive experiments in both simulation and real-world environments show that ReBot significantly enhances the performance and robustness of VLAs. For example, in SimplerEnv with the WidowX robot, ReBot improved the in-domain performance of Octo by 7.2% and OpenVLA by 21.8%, and out-of-domain generalization by 19.9% and 9.4%, respectively. For real-world evaluation with a Franka robot, ReBot increased the success rates of Octo by 17% and OpenVLA by 20%. More information can be found at: this https URL</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">ReBot</span><span class="tag">Vision-Language-Action Models</span><span class="tag">Real-to-Sim-to-Real</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2507.21981" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/DISCOVERSE_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2507.21981" target="_blank" rel="noopener">DISCOVERSE: Efficient Robot Simulation in Complex High-Fidelity Environments</a>
+        </h4>
+        <p class="cite-brief">We present the first unified, modular, open-source 3DGS-based simulation framework for Real2Sim2Real robot learning. It features a holistic Real2Sim pipeline that synthesizes hyper-realistic geometry and appearance of complex real-world scenarios, paving the way for analyzing and bridging the Sim2Real gap. Powered by Gaussian Splatting and MuJoCo, Discoverse enables massively parallel simulation of multiple sensor modalities and accurate physics, with inclusive supports for existing 3D assets, robot models, and ROS plugins, empowering large-scale robot learning and complex robotic benchmarks. Through extensive experiments on imitation learning, Discoverse demonstrates state-of-the-art zero-shot Sim2Real transfer performance compared to existing simulators. For code and demos: this https URL.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">Discoverse</span><span class="tag">Real2Sim2Real</span><span class="tag">3D Gaussian Splatting</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2502.08449" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/CordViP_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2502.08449" target="_blank" rel="noopener">CordViP: Correspondence-based Visuomotor Policy for Dexterous Manipulation in Real-World</a>
+        </h4>
+        <p class="cite-brief">Achieving human-level dexterity in robots is a key objective in the field of robotic manipulation. Recent advancements in 3D-based imitation learning have shown promising results, providing an effective pathway to achieve this goal. However, obtaining high-quality 3D representations presents two key problems: (1) the quality of point clouds captured by a single-view camera is significantly affected by factors such as camera resolution, positioning, and occlusions caused by the dexterous hand; (2) the global point clouds lack crucial contact information and spatial correspondences, which are necessary for fine-grained dexterous manipulation tasks. To eliminate these limitations, we propose CordViP, a novel framework that constructs and learns correspondences by leveraging the robust 6D pose estimation of objects and robot proprioception. Specifically, we first introduce the interaction-aware point clouds, which establish correspondences between the object and the hand. These point clouds are then used for our pre-training policy, where we also incorporate object-centric contact maps and hand-arm coordination information, effectively capturing both spatial and temporal dynamics. Our method demonstrates exceptional dexterous manipulation capabilities, achieving state-of-the-art performance in six real-world tasks, surpassing other baselines by a large margin. Experimental results also highlight the superior generalization and robustness of CordViP to different objects, viewpoints, and scenarios. Code and videos are available on this https URL.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">CordViP</span><span class="tag">Dexterous Manipulation</span><span class="tag">Interaction-Aware Point Clouds</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://ieeexplore.ieee.org/abstract/document/11051000/" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/Vision-Based Contact Force Sensing in Robotic_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://ieeexplore.ieee.org/abstract/document/11051000/" target="_blank" rel="noopener">Vision-Based Contact Force Sensing in Robotic Surgery: A Technical Review</a>
+        </h4>
+        <p class="cite-brief">Contact force sensing plays a fundamental role in enabling precise and safe manipulations in surgical robotics. While traditional force sensing methods predominantly rely on physical sensors, they encounter significant limitations including integration complexity, limited durability, and scalability constraints in surgical environments. This paper presents a comprehensive survey of vision-based force sensing approaches that leverage computer vision and image processing techniques to infer contact forces without dedicated physical sensors. The survey systematically analyzes state-of-the-art methodologies encompassing vision-based force estimation, surface deformation analysis, and machine learning-driven perception frameworks. The underlying principles, algorithmic architectures, and surgical applications of these approaches are examined in detail. Critical challenges including real-time processing requirements, robustness to environmental variations, and cross-task generalizability are thoroughly investigated. The survey highlights the distinctive advantages of purely vision-based approaches, including reduced hardware complexity, enhanced adaptability, and seamless integration potential with existing surgical robotic platforms. Furthermore, this work identifies critical open research questions and promising future directions for advancing vision-based force sensing technologies in next-generation surgical robotics. This comprehensive review serves as an authoritative reference for researchers and practitioners working to overcome the limitations of traditional contact force sensing through vision-based solutions in surgical applications.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">Vision-Based Force Sensing</span><span class="tag">Surgical Robotics</span><span class="tag">Contact Force Estimation</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2505.16196" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/SEM_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2505.16196" target="_blank" rel="noopener">SEM: Enhancing Spatial Understanding for Robust Robot Manipulation</a>
+        </h4>
+        <p class="cite-brief">A key challenge in robot manipulation lies in developing policy models with strong spatial understanding, the ability to reason about 3D geometry, object relations, and robot embodiment. Existing methods often fall short: 3D point cloud models lack semantic abstraction, while 2D image encoders struggle with spatial reasoning. To address this, we propose SEM (Spatial Enhanced Manipulation model), a novel diffusion-based policy framework that explicitly enhances spatial understanding from two complementary perspectives. A spatial enhancer augments visual representations with 3D geometric context, while a robot state encoder captures embodiment-aware structure through graphbased modeling of joint dependencies. By integrating these modules, SEM significantly improves spatial understanding, leading to robust and generalizable manipulation across diverse tasks that outperform existing baselines.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">SEM</span><span class="tag">Spatial Understanding</span><span class="tag">Diffusion-Based Policy</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2506.23351" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/Benchmarking Generalizable Bimanual Manipulation_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2506.23351" target="_blank" rel="noopener">Benchmarking Generalizable Bimanual Manipulation: RoboTwin Dual-Arm Collaboration Challenge at CVPR 2025 MEIS Workshop</a>
+        </h4>
+        <p class="cite-brief">Embodied Artificial Intelligence (Embodied AI) is an emerging frontier in robotics, driven by the need for autonomous systems that can perceive, reason, and act in complex physical environments. While single-arm systems have shown strong task performance, collaborative dual-arm systems are essential for handling more intricate tasks involving rigid, deformable, and tactile-sensitive objects. To advance this goal, we launched the RoboTwin Dual-Arm Collaboration Challenge at the 2nd MEIS Workshop, CVPR 2025. Built on the RoboTwin Simulation platform (1.0 and 2.0) and the AgileX COBOT-Magic Robot platform, the competition consisted of three stages: Simulation Round 1, Simulation Round 2, and a final Real-World Round. Participants totally tackled 17 dual-arm manipulation tasks, covering rigid, deformable, and tactile-based scenarios. The challenge attracted 64 global teams and over 400 participants, producing top-performing solutions like SEM and AnchorDP3 and generating valuable insights into generalizable bimanual policy learning. This report outlines the competition setup, task design, evaluation methodology, key findings and future direction, aiming to support future research on robust and generalizable bimanual manipulation policies. The Challenge Webpage is available at this https URL.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">RoboTwin</span><span class="tag">Dual-Arm Collaboration</span><span class="tag">Bimanual Manipulation Challenge</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2503.09186" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/Rethinking Bimanual Robotic Manipulation_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2503.09186" target="_blank" rel="noopener">Rethinking Bimanual Robotic Manipulation: Learning with Decoupled Interaction Framework</a>
+        </h4>
+        <p class="cite-brief">Bimanual robotic manipulation is an emerging and critical topic in the robotics community. Previous works primarily rely on integrated control models that take the perceptions and states of both arms as inputs to directly predict their actions. However, we think bimanual manipulation involves not only coordinated tasks but also various uncoordinated tasks that do not require explicit cooperation during execution, such as grasping objects with the closest hand, which integrated control frameworks ignore to consider due to their enforced cooperation in the early inputs. In this paper, we propose a novel decoupled interaction framework that considers the characteristics of different tasks in bimanual manipulation. The key insight of our framework is to assign an independent model to each arm to enhance the learning of uncoordinated tasks, while introducing a selective interaction module that adaptively learns weights from its own arm to improve the learning of coordinated tasks. Extensive experiments on seven tasks in the RoboTwin dataset demonstrate that: (1) Our framework achieves outstanding performance, with a 23.5% boost over the SOTA method. (2) Our framework is flexible and can be seamlessly integrated into existing methods. (3) Our framework can be effectively extended to multi-agent manipulation tasks, achieving a 28% boost over the integrated control SOTA. (4) The performance boost stems from the decoupled design itself, surpassing the SOTA by 16.5% in success rate with only 1/6 of the model size.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">Decoupled Interaction Framework</span><span class="tag">Bimanual Robotic Manipulation</span><span class="tag">Selective Interaction Module</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://openaccess.thecvf.com/content/CVPR2025W/MEIS/html/Yu_Efficient_Task-specific_Conditional_Diffusion_Policies_Shortcut_Model_Acceleration_and_SO3_CVPRW_2025_paper.html" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/Efficient Task-specific Conditional Diffusion Policies_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://openaccess.thecvf.com/content/CVPR2025W/MEIS/html/Yu_Efficient_Task-specific_Conditional_Diffusion_Policies_Shortcut_Model_Acceleration_and_SO3_CVPRW_2025_paper.html" target="_blank" rel="noopener">Efficient Task-specific Conditional Diffusion Policies: Shortcut Model Acceleration and SO(3) Optimization</a>
+        </h4>
+        <p class="cite-brief">Imitation learning, particularly Diffusion Policies based methods, has recently gained significant traction in embod- ied AI as a powerful approach to action policy generation. These models efficiently generate action policies by learn- ing to predict noise. However, conventional Diffusion Pol- icy methods rely on iterative denoising, leading to ineffi- cient inference and slow response times, which hinder real- time robot control. To address these limitations, we pro- pose a Classifier-Free Shortcut Diffusion Policy (CF-SDP) that integrates classifier-free guidance with shortcut-based acceleration, enabling efficient task-specific action gener- ation while significantly improving inference speed. Fur- thermore, we extend diffusion modeling to the SO(3) man- ifold in shortcut model, defining the forward and reverse processes in its tangent space with an isotropic Gaussian distribution. This ensures stable and accurate rotational estimation, enhancing the effectiveness of diffusion-based control. Our approach achieves nearly 5x acceleration in diffusion inference compared to DDIM-based Diffusion Pol- icy while maintaining task performance. Evaluations both on the RoboTwin simulation platform and real-world sce- narios across various tasks demonstrate the superiority of our method.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">Classifier-Free Shortcut Diffusion Policy</span><span class="tag">Efficient Inference</span><span class="tag">SO(3) Manifold</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2503.13171" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/HybridGen_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2503.13171" target="_blank" rel="noopener">HybridGen: VLM-Guided Hybrid Planning for Scalable Data Generation of Imitation Learning</a>
+        </h4>
+        <p class="cite-brief">The acquisition of large-scale and diverse demonstration data are essential for improving robotic imitation learning generalization. However, generating such data for complex manipulations is challenging in real-world settings. We introduce HybridGen, an automated framework that integrates Vision-Language Model (VLM) and hybrid planning. HybridGen uses a two-stage pipeline: first, VLM to parse expert demonstrations, decomposing tasks into expert-dependent (object-centric pose transformations for precise control) and plannable segments (synthesizing diverse trajectories via path planning); second, pose transformations substantially expand the first-stage data. Crucially, HybridGen generates a large volume of training data without requiring specific data formats, making it broadly applicable to a wide range of imitation learning algorithms, a characteristic which we also demonstrate empirically across multiple algorithms. Evaluations across seven tasks and their variants demonstrate that agents trained with HybridGen achieve substantial performance and generalization gains, averaging a 5% improvement over state-of-the-art methods. Notably, in the most challenging task variants, HybridGen achieves significant improvement, reaching a 59.7% average success rate, significantly outperforming Mimicgen's 49.5%. These results demonstrating its effectiveness and practicality.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">HybridGen</span><span class="tag">Imitation Learning</span><span class="tag">Vision-Language Model</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2506.06221" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/BiAssemble_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2506.06221" target="_blank" rel="noopener">BiAssemble: Learning Collaborative Affordance for Bimanual Geometric Assembly</a>
+        </h4>
+        <p class="cite-brief">Shape assembly, the process of combining parts into a complete whole, is a crucial robotic skill with broad real-world applications. Among various assembly tasks, geometric assembly--where broken parts are reassembled into their original form (e.g., reconstructing a shattered bowl)--is particularly challenging. This requires the robot to recognize geometric cues for grasping, assembly, and subsequent bimanual collaborative manipulation on varied fragments. In this paper, we exploit the geometric generalization of point-level affordance, learning affordance aware of bimanual collaboration in geometric assembly with long-horizon action sequences. To address the evaluation ambiguity caused by geometry diversity of broken parts, we introduce a real-world benchmark featuring geometric variety and global reproducibility. Extensive experiments demonstrate the superiority of our approach over both previous affordance-based and imitation-based methods.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">Geometric Assembly</span><span class="tag">Bimanual Collaboration</span><span class="tag">Point-Level Affordance</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2507.04452" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/SimLauncher_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2507.04452" target="_blank" rel="noopener">SimLauncher: Launching Sample-Efficient Real-world Robotic Reinforcement Learning via Simulation Pre-training</a>
+        </h4>
+        <p class="cite-brief">Autonomous learning of dexterous, long-horizon robotic skills has been a longstanding pursuit of embodied AI. Recent advances in robotic reinforcement learning (RL) have demonstrated remarkable performance and robustness in real-world visuomotor control tasks. However, applying RL in the real world faces challenges such as low sample efficiency, slow exploration, and significant reliance on human intervention. In contrast, simulators offer a safe and efficient environment for extensive exploration and data collection, while the visual sim-to-real gap, often a limiting factor, can be mitigated using real-to-sim techniques. Building on these, we propose SimLauncher, a novel framework that combines the strengths of real-world RL and real-to-sim-to-real approaches to overcome these challenges. Specifically, we first pre-train a visuomotor policy in the digital twin simulation environment, which then benefits real-world RL in two ways: (1) bootstrapping target values using extensive simulated demonstrations and real-world demonstrations derived from pre-trained policy rollouts, and (2) Incorporating action proposals from the pre-trained policy for better exploration. We conduct comprehensive experiments across multi-stage, contact-rich, and dexterous hand manipulation tasks. Compared to prior real-world RL approaches, SimLauncher significantly improves sample efficiency and achieves near-perfect success rates. We hope this work serves as a proof of concept and inspires further research on leveraging large-scale simulation pre-training to benefit real-world robotic RL.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">SimLauncher</span><span class="tag">Real-to-Sim-to-Real</span><span class="tag">Robotic Reinforcement Learning</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2508.02629" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/HyCodePolicy_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2508.02629" target="_blank" rel="noopener">HyCodePolicy: Hybrid Language Controllers for Multimodal Monitoring and Decision in Embodied Agents</a>
+        </h4>
+        <p class="cite-brief">Recent advances in multimodal large language models (MLLMs) have enabled richer perceptual grounding for code policy generation in embodied agents. However, most existing systems lack effective mechanisms to adaptively monitor policy execution and repair codes during task completion. In this work, we introduce HyCodePolicy, a hybrid language-based control framework that systematically integrates code synthesis, geometric grounding, perceptual monitoring, and iterative repair into a closed-loop programming cycle for embodied agents. Technically, given a natural language instruction, our system first decomposes it into subgoals and generates an initial executable program grounded in object-centric geometric primitives. The program is then executed in simulation, while a vision-language model (VLM) observes selected checkpoints to detect and localize execution failures and infer failure reasons. By fusing structured execution traces capturing program-level events with VLM-based perceptual feedback, HyCodePolicy infers failure causes and repairs programs. This hybrid dual feedback mechanism enables self-correcting program synthesis with minimal human supervision. Our results demonstrate that HyCodePolicy significantly improves the robustness and sample efficiency of robot manipulation policies, offering a scalable strategy for integrating multimodal reasoning into autonomous decision-making pipelines.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">HyCodePolicy</span><span class="tag">Code Policy Generation</span><span class="tag">Perceptual Monitoring and Repair</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2509.01819" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/ManiFlow_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2509.01819" target="_blank" rel="noopener">ManiFlow: A General Robot Manipulation Policy via Consistency Flow Training</a>
+        </h4>
+        <p class="cite-brief">This paper introduces ManiFlow, a visuomotor imitation learning policy for general robot manipulation that generates precise, high-dimensional actions conditioned on diverse visual, language and proprioceptive inputs. We leverage flow matching with consistency training to enable high-quality dexterous action generation in just 1-2 inference steps. To handle diverse input modalities efficiently, we propose DiT-X, a diffusion transformer architecture with adaptive cross-attention and AdaLN-Zero conditioning that enables fine-grained feature interactions between action tokens and multi-modal observations. ManiFlow demonstrates consistent improvements across diverse simulation benchmarks and nearly doubles success rates on real-world tasks across single-arm, bimanual, and humanoid robot setups with increasing dexterity. The extensive evaluation further demonstrates the strong robustness and generalizability of ManiFlow to novel objects and background changes, and highlights its strong scaling capability with larger-scale datasets.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">ManiFlow</span><span class="tag">Visuomotor Imitation Learning</span><span class="tag">Flow Matching</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2507.11296" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/Diffusion-Based Imaginative Coordination_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2507.11296" target="_blank" rel="noopener">Diffusion-Based Imaginative Coordination for Bimanual Manipulation</a>
+        </h4>
+        <p class="cite-brief">Bimanual manipulation is crucial in robotics, enabling complex tasks in industrial automation and household services. However, it poses significant challenges due to the high-dimensional action space and intricate coordination requirements. While video prediction has been recently studied for representation learning and control, leveraging its ability to capture rich dynamic and behavioral information, its potential for enhancing bimanual coordination remains underexplored. To bridge this gap, we propose a unified diffusion-based framework for the joint optimization of video and action prediction. Specifically, we propose a multi-frame latent prediction strategy that encodes future states in a compressed latent space, preserving task-relevant features. Furthermore, we introduce a unidirectional attention mechanism where video prediction is conditioned on the action, while action prediction remains independent of video prediction. This design allows us to omit video prediction during inference, significantly enhancing efficiency. Experiments on two simulated benchmarks and a real-world setting demonstrate a significant improvement in the success rate over the strong baseline ACT using our method, achieving a /textbf{24.9/%} increase on ALOHA, an /textbf{11.1/%} increase on RoboTwin, and a /textbf{32.5/%} increase in real-world experiments. </p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">Bimanual Manipulation</span><span class="tag">Diffusion-Based Framework</span><span class="tag">Video-Action Prediction</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2507.00833" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/HumanoidGen_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2507.00833" target="_blank" rel="noopener">HumanoidGen: Data Generation for Bimanual Dexterous Manipulation via LLM Reasoning</a>
+        </h4>
+        <p class="cite-brief">For robotic manipulation, existing robotics datasets and simulation benchmarks predominantly cater to robot-arm platforms. However, for humanoid robots equipped with dual arms and dexterous hands, simulation tasks and high-quality demonstrations are notably lacking. Bimanual dexterous manipulation is inherently more complex, as it requires coordinated arm movements and hand operations, making autonomous data collection challenging. This paper presents HumanoidGen, an automated task creation and demonstration collection framework that leverages atomic dexterous operations and LLM reasoning to generate relational constraints. Specifically, we provide spatial annotations for both assets and dexterous hands based on the atomic operations, and perform an LLM planner to generate a chain of actionable spatial constraints for arm movements based on object affordances and scenes. To further improve planning ability, we employ a variant of Monte Carlo tree search to enhance LLM reasoning for long-horizon tasks and insufficient annotation. In experiments, we create a novel benchmark with augmented scenarios to evaluate the quality of the collected data. The results show that the performance of the 2D and 3D diffusion policies can scale with the generated dataset. </p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">HumanoidGen</span><span class="tag">Bimanual Dexterous Manipulation</span><span class="tag">Automated Demonstration Collection</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2506.07570" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/LLM-driven Indoor_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2506.07570" target="_blank" rel="noopener">LLM-driven Indoor Scene Layout Generation via Scaled Human-aligned Data Synthesis and Multi-Stage Preference Optimization</a>
+        </h4>
+        <p class="cite-brief">Automatic indoor layout generation has attracted increasing attention due to its potential in interior design, virtual environment construction, and embodied AI. Existing methods fall into two categories: prompt-driven approaches that leverage proprietary LLM services (e.g., GPT APIs) and learning-based methods trained on layout data upon diffusion-based models. Prompt-driven methods often suffer from spatial inconsistency and high computational costs, while learning-based methods are typically constrained by coarse relational graphs and limited datasets, restricting their generalization to diverse room categories. In this paper, we revisit LLM-based indoor layout generation and present 3D-SynthPlace, a large-scale dataset that combines synthetic layouts generated via a 'GPT synthesize, Human inspect' pipeline, upgraded from the 3D-Front dataset. 3D-SynthPlace contains nearly 17,000 scenes, covering four common room types -- bedroom, living room, kitchen, and bathroom -- enriched with diverse objects and high-level spatial annotations. We further introduce OptiScene, a strong open-source LLM optimized for indoor layout generation, fine-tuned based on our 3D-SynthPlace dataset through our two-stage training. For the warum-up stage I, we adopt supervised fine-tuning (SFT), which is taught to first generate high-level spatial descriptions then conditionally predict concrete object placements. For the reinforcing stage II, to better align the generated layouts with human design preferences, we apply multi-turn direct preference optimization (DPO), which significantly improving layout quality and generation success rates. Extensive experiments demonstrate that OptiScene outperforms traditional prompt-driven and learning-based baselines. Moreover, OptiScene shows promising potential in interactive tasks such as scene editing and robot navigation.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">3D-SynthPlace</span><span class="tag">OptiScene</span><span class="tag">Indoor Layout Generation</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2507.12768" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/AnyPos_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2507.12768" target="_blank" rel="noopener">AnyPos: Automated Task-Agnostic Actions for Bimanual Manipulation</a>
+        </h4>
+        <p class="cite-brief">Vision-language-action (VLA) models have shown promise on task-conditioned control in complex settings such as bimanual manipulation. However, the heavy reliance on task-specific human demonstrations limits their generalization and incurs high data acquisition costs. In this work, we present a new notion of task-agnostic action paradigm that decouples action execution from task-specific conditioning, enhancing scalability, efficiency, and cost-effectiveness. To address the data collection challenges posed by this paradigm -- such as low coverage density, behavioral redundancy, and safety risks -- we introduce ATARA (Automated Task-Agnostic Random Actions), a scalable self-supervised framework that accelerates collection by over  compared to human teleoperation. To further enable effective learning from task-agnostic data, which often suffers from distribution mismatch and irrelevant trajectories, we propose AnyPos, an inverse dynamics model equipped with Arm-Decoupled Estimation and a Direction-Aware Decoder (DAD). We additionally integrate a video-conditioned action validation module to verify the feasibility of learned policies across diverse manipulation tasks. Extensive experiments show that the AnyPos-ATARA pipeline yields a 51% improvement in test accuracy and achieves 30-40% higher success rates in downstream tasks such as lifting, pick-and-place, and clicking, using replay-based video validation.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">ATARA</span><span class="tag">Task-Agnostic Action Paradigm</span><span class="tag">AnyPos</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2503.00508" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/HGDiffuser_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2503.00508" target="_blank" rel="noopener">HGDiffuser: Efficient Task-Oriented Grasp Generation via Human-Guided Grasp Diffusion Models</a>
+        </h4>
+        <p class="cite-brief">HGDiffuser; Task-Oriented Grasping; Diffusion Transformer</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">nan</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2505.01458" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/A Survey of Robotic Navigation_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2505.01458" target="_blank" rel="noopener">A Survey of Robotic Navigation and Manipulation with Physics Simulators in the Era of Embodied AI</a>
+        </h4>
+        <p class="cite-brief">Navigation and manipulation are core capabilities in Embodied AI, yet training agents with these capabilities in the real world faces high costs and time complexity. Therefore, sim-to-real transfer has emerged as a key approach, yet the sim-to-real gap persists. This survey examines how physics simulators address this gap by analyzing their properties overlooked in previous surveys. We also analyze their features for navigation and manipulation tasks, along with hardware requirements. Additionally, we offer a resource with benchmark datasets, metrics, simulation platforms, and cutting-edge methods-such as world models and geometric equivariance-to help researchers select suitable tools while accounting for hardware constraints.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">Sim-to-Real Transfer</span><span class="tag">Physics Simulators</span><span class="tag">Embodied AI</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2507.04633" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/PRISM_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2507.04633" target="_blank" rel="noopener">PRISM: Pointcloud Reintegrated Inference via Segmentation and Cross-attention for Manipulation</a>
+        </h4>
+        <p class="cite-brief">Robust imitation learning for robot manipulation requires comprehensive 3D perception, yet many existing methods struggle in cluttered environments. Fixed camera view approaches are vulnerable to perspective changes, and 3D point cloud techniques often limit themselves to keyframes predictions, reducing their efficacy in dynamic, contact-intensive tasks. To address these challenges, we propose PRISM, designed as an end-to-end framework that directly learns from raw point cloud observations and robot states, eliminating the need for pretrained models or external datasets. PRISM comprises three main components: a segmentation embedding unit that partitions the raw point cloud into distinct object clusters and encodes local geometric details; a cross-attention component that merges these visual features with processed robot joint states to highlight relevant targets; and a diffusion module that translates the fused representation into smooth robot actions. With training on 100 demonstrations per task, PRISM surpasses both 2D and 3D baseline policies in accuracy and efficiency within our simulated environments, demonstrating strong robustness in complex, object-dense scenarios.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">PRISM</span><span class="tag">3D Point Cloud Perception</span><span class="tag">Imitation Learning</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2506.16211" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/ControlVLA_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2506.16211" target="_blank" rel="noopener">ControlVLA: Few-shot Object-centric Adaptation for Pre-trained Vision-Language-Action Models</a>
+        </h4>
+        <p class="cite-brief">Learning real-world robotic manipulation is challenging, particularly when limited demonstrations are available. Existing methods for few-shot manipulation often rely on simulation-augmented data or pre-built modules like grasping and pose estimation, which struggle with sim-to-real gaps and lack extensibility. While large-scale imitation pre-training shows promise, adapting these general-purpose policies to specific tasks in data-scarce settings remains unexplored. To achieve this, we propose ControlVLA, a novel framework that bridges pre-trained VLA models with object-centric representations via a ControlNet-style architecture for efficient fine-tuning. Specifically, to introduce object-centric conditions without overwriting prior knowledge, ControlVLA zero-initializes a set of projection layers, allowing them to gradually adapt the pre-trained manipulation policies. In real-world experiments across 6 diverse tasks, including pouring cubes and folding clothes, our method achieves a 76.7% success rate while requiring only 10-20 demonstrations -- a significant improvement over traditional approaches that require more than 100 demonstrations to achieve comparable success. Additional experiments highlight ControlVLA's extensibility to long-horizon tasks and robustness to unseen objects and backgrounds.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">ControlVLA</span><span class="tag">Few-Shot Manipulation</span><span class="tag">Object-Centric Representations</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2503.12466" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/Modality-Composable Diffusion Policy_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2503.12466" target="_blank" rel="noopener">Modality-Composable Diffusion Policy via Inference-Time Distribution-level Composition</a>
+        </h4>
+        <p class="cite-brief">Diffusion Policy (DP) has attracted significant attention as an effective method for policy representation due to its capacity to model multi-distribution dynamics. However, current DPs are often based on a single visual modality (e.g., RGB or point cloud), limiting their accuracy and generalization potential. Although training a generalized DP capable of handling heterogeneous multimodal data would enhance performance, it entails substantial computational and data-related costs. To address these challenges, we propose a novel policy composition method: by leveraging multiple pre-trained DPs based on individual visual modalities, we can combine their distributional scores to form a more expressive Modality-Composable Diffusion Policy (MCDP), without the need for additional training. Through extensive empirical experiments on the RoboTwin dataset, we demonstrate the potential of MCDP to improve both adaptability and performance. This exploration aims to provide valuable insights into the flexible composition of existing DPs, facilitating the development of generalizable cross-modality, cross-domain, and even cross-embodiment policies.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">MCDP</span><span class="tag">Multimodal Diffusion Policy</span><span class="tag">Policy Composition</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2507.01857" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/TypeTele_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2507.01857" target="_blank" rel="noopener">TypeTele: Releasing Dexterity in Teleoperation by Dexterous Manipulation Types</a>
+        </h4>
+        <p class="cite-brief">Dexterous teleoperation plays a crucial role in robotic manipulation for real-world data collection and remote robot control. Previous dexterous teleoperation mostly relies on hand retargeting to closely mimic human hand postures. However, these approaches may fail to fully leverage the inherent dexterity of dexterous hands, which can execute unique actions through their structural advantages compared to human hands. To address this limitation, we propose TypeTele, a type-guided dexterous teleoperation system, which enables dexterous hands to perform actions that are not constrained by human motion patterns. This is achieved by introducing dexterous manipulation types into the teleoperation system, allowing operators to employ appropriate types to complete specific tasks. To support this system, we build an extensible dexterous manipulation type library to cover comprehensive dexterous postures used in manipulation tasks. During teleoperation, we employ a MLLM (Multi-modality Large Language Model)-assisted type retrieval module to identify the most suitable manipulation type based on the specific task and operator commands. Extensive experiments of real-world teleoperation and imitation learning demonstrate that the incorporation of manipulation types significantly takes full advantage of the dexterous robot's ability to perform diverse and complex tasks with higher success rates.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">TypeTele</span><span class="tag">Dexterous Teleoperation</span><span class="tag">Manipulation Types</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://openreview.net/forum?id=3LvTtj0VYy" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/ControlManip_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://openreview.net/forum?id=3LvTtj0VYy" target="_blank" rel="noopener">ControlManip: Few-Shot Manipulation Fine-tuning via Object-centric Conditional Control</a>
+        </h4>
+        <p class="cite-brief">Learning real-world robotic manipulation is challenging, particularly when limited demonstrations are available. Existing methods for few-shot manipulation often rely on simulation-augmented data or pre-built modules like grasping and pose estimation, which struggle with sim-to-real gaps and lack versatility. While large-scale imitation pre-training shows promise, adapting these general-purpose policies to specific tasks in data-scarce settings remains unexplored. To achieve this, we propose ControlManip, a novel framework that bridges pre-trained manipulation policies with object-centric representations via a ControlNet-style architecture for efficient fine-tuning. Specifically, to introduce object-centric conditions without overwriting prior knowledge, ControlManip zero-initializes a set of projection layers, allowing them to gradually adapt the pre-trained manipulation policies. In real-world experiments across 6 diverse tasks, including pouring cubes and folding clothes, our method achieves a 73.3% success rate while requiring only 10-20 demonstrations --- a significant improvement over traditional approaches that require more than 100 demonstrations to achieve comparable success. Comprehensive studies show that ControlManip improves the few-shot fine-tuning success rate by 252% over baselines and demonstrates robustness to object and background changes. By lowering the barriers to task development, ControlManip accelerates real-world robot adoption and lays the groundwork for unifying large-scale policy pre-training with object-centric representations.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">ControlManip</span><span class="tag">Few-Shot Robotic Manipulation</span><span class="tag">Object-Centric Representations</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2507.01961" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/AC-DiT_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2507.01961" target="_blank" rel="noopener">AC-DiT: Adaptive Coordination Diffusion Transformer for Mobile Manipulation</a>
+        </h4>
+        <p class="cite-brief">Recently, mobile manipulation has attracted increasing attention for enabling language-conditioned robotic control in household tasks. However, existing methods still face challenges in coordinating mobile base and manipulator, primarily due to two limitations. On the one hand, they fail to explicitly model the influence of the mobile base on manipulator control, which easily leads to error accumulation under high degrees of freedom. On the other hand, they treat the entire mobile manipulation process with the same visual observation modality (e.g., either all 2D or all 3D), overlooking the distinct multimodal perception requirements at different stages during mobile manipulation. To address this, we propose the Adaptive Coordination Diffusion Transformer (AC-DiT), which enhances mobile base and manipulator coordination for end-to-end mobile manipulation. First, since the motion of the mobile base directly influences the manipulator's actions, we introduce a mobility-to-body conditioning mechanism that guides the model to first extract base motion representations, which are then used as context prior for predicting whole-body actions. This enables whole-body control that accounts for the potential impact of the mobile base's motion. Second, to meet the perception requirements at different stages of mobile manipulation, we design a perception-aware multimodal conditioning strategy that dynamically adjusts the fusion weights between various 2D visual images and 3D point clouds, yielding visual features tailored to the current perceptual needs. This allows the model to, for example, adaptively rely more on 2D inputs when semantic information is crucial for action prediction, while placing greater emphasis on 3D geometric information when precise spatial understanding is required. We validate AC-DiT through extensive experiments on both simulated and real-world mobile manipulation tasks.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">AC-DiT</span><span class="tag">Mobile Manipulation</span><span class="tag">Multimodal Perception</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2507.17462" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/ERMV_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2507.17462" target="_blank" rel="noopener">ERMV: Editing 4D Robotic Multi-view images to enhance embodied agents</a>
+        </h4>
+        <p class="cite-brief">Robot imitation learning relies on 4D multi-view sequential images. However, the high cost of data collection and the scarcity of high-quality data severely constrain the generalization and application of embodied intelligence policies like Vision-Language-Action (VLA) models. Data augmentation is a powerful strategy to overcome data scarcity, but methods for editing 4D multi-view sequential images for manipulation tasks are currently lacking. Thus, we propose ERMV (Editing Robotic Multi-View 4D data), a novel data augmentation framework that efficiently edits an entire multi-view sequence based on single-frame editing and robot state conditions. This task presents three core challenges: (1) maintaining geometric and appearance consistency across dynamic views and long time horizons; (2) expanding the working window with low computational costs; and (3) ensuring the semantic integrity of critical objects like the robot arm. ERMV addresses these challenges through a series of innovations. First, to ensure spatio-temporal consistency in motion blur, we introduce a novel Epipolar Motion-Aware Attention (EMA-Attn) mechanism that learns pixel shift caused by movement before applying geometric constraints. Second, to maximize the editing working window, ERMV pioneers a Sparse Spatio-Temporal (STT) module, which decouples the temporal and spatial views and remodels a single-frame multi-view problem through sparse sampling of the views to reduce computational demands. Third, to alleviate error accumulation, we incorporate a feedback intervention Mechanism, which uses a Multimodal Large Language Model (MLLM) to check editing inconsistencies and request targeted expert guidance only when necessary. Extensive experiments demonstrate that ERMV-augmented data significantly boosts the robustness and generalization of VLA models in both simulated and real-world environments.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">ERMV</span><span class="tag">Data Augmentation</span><span class="tag">Multi-View 4D Robot Imitation Learning</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2508.18268" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/SafeBimanual_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2508.18268" target="_blank" rel="noopener">SafeBimanual: Diffusion-based Trajectory Optimization for Safe Bimanual Manipulation</a>
+        </h4>
+        <p class="cite-brief">Bimanual manipulation has been widely applied in household services and manufacturing, which enables the complex task completion with coordination requirements. Recent diffusion-based policy learning approaches have achieved promising performance in modeling action distributions for bimanual manipulation. However, they ignored the physical safety constraints of bimanual manipulation, which leads to the dangerous behaviors with damage to robots and objects. To this end, we propose a test-time trajectory optimization framework named SafeBimanual for any pre-trained diffusion-based bimanual manipulation policies, which imposes the safety constraints on bimanual actions to avoid dangerous robot behaviors with improved success rate. Specifically, we design diverse cost functions for safety constraints in different dual-arm cooperation patterns including avoidance of tearing objects and collision between arms and objects, which optimizes the manipulator trajectories with guided sampling of diffusion denoising process. Moreover, we employ a vision-language model (VLM) to schedule the cost functions by specifying keypoints and corresponding pairwise relationship, so that the optimal safety constraint is dynamically generated in the entire bimanual manipulation process. SafeBimanual demonstrates superiority on 8 simulated tasks in RoboTwin with a 13.7% increase in success rate and a 18.8% reduction in unsafe interactions over state-of-the-art diffusion-based methods. Extensive experiments on 4 real-world tasks further verify its practical value by improving the success rate by 32.5%.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">SafeBimanual</span><span class="tag">Bimanual Manipulation</span><span class="tag">Safety-Constrained Diffusion Policy</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2505.06678" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/Distributionally Robust Contract Theory_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2505.06678" target="_blank" rel="noopener">Distributionally Robust Contract Theory for Edge AIGC Services in Teleoperation</a>
+        </h4>
+        <p class="cite-brief">Advanced AI-Generated Content (AIGC) technologies have injected new impetus into teleoperation, further enhancing its security and efficiency. Edge AIGC networks have been introduced to meet the stringent low-latency requirements of teleoperation. However, the inherent uncertainty of AIGC service quality and the need to incentivize AIGC service providers (ASPs) make the design of a robust incentive mechanism essential. This design is particularly challenging due to both uncertainty and information asymmetry, as teleoperators have limited knowledge of the remaining resource capacities of ASPs. To this end, we propose a distributionally robust optimization (DRO)-based contract theory to design robust reward schemes for AIGC task offloading. Notably, our work extends the contract theory by integrating DRO, addressing the fundamental challenge of contract design under uncertainty. In this paper, contract theory is employed to model the information asymmetry, while DRO is utilized to capture the uncertainty in AIGC service quality. Given the inherent complexity of the original DRO-based contract theory problem, we reformulate it into an equivalent, tractable bi-level optimization problem. To efficiently solve this problem, we develop a Block Coordinate Descent (BCD)-based algorithm to derive robust reward schemes. Simulation results on our unity-based teleoperation platform demonstrate that the proposed method improves teleoperator utility by 2.7/% to 10.74/% under varying degrees of AIGC service quality shifts and increases ASP utility by 60.02/% compared to the SOTA method, i.e., Deep Reinforcement Learning (DRL)-based contract theory. </p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">AIGC Teleoperation</span><span class="tag">Distributionally Robust Optimization</span><span class="tag">Contract Theory</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2506.19269" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/AnchorDP3_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2506.19269" target="_blank" rel="noopener">AnchorDP3: 3D Affordance Guided Sparse Diffusion Policy for Robotic Manipulation</a>
+        </h4>
+        <p class="cite-brief">We present AnchorDP3, a diffusion policy framework for dual-arm robotic manipulation that achieves state-of-the-art performance in highly randomized environments. AnchorDP3 integrates three key innovations: (1) Simulator-Supervised Semantic Segmentation, using rendered ground truth to explicitly segment task-critical objects within the point cloud, which provides strong affordance priors; (2) Task-Conditioned Feature Encoders, lightweight modules processing augmented point clouds per task, enabling efficient multi-task learning through a shared diffusion-based action expert; (3) Affordance-Anchored Keypose Diffusion with Full State Supervision, replacing dense trajectory prediction with sparse, geometrically meaningful action anchors, i.e., keyposes such as pre-grasp pose, grasp pose directly anchored to affordances, drastically simplifying the prediction space; the action expert is forced to predict both robot joint angles and end-effector poses simultaneously, which exploits geometric consistency to accelerate convergence and boost accuracy. Trained on large-scale, procedurally generated simulation data, AnchorDP3 achieves a 98.7% average success rate in the RoboTwin benchmark across diverse tasks under extreme randomization of objects, clutter, table height, lighting, and backgrounds. This framework, when integrated with the RoboTwin real-to-sim pipeline, has the potential to enable fully autonomous generation of deployable visuomotor policies from only scene and instruction, totally eliminating human demonstrations from learning manipulation skills.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">AnchorDP3</span><span class="tag">Dual-Arm Robotic Manipulation</span><span class="tag">Affordance-Anchored Diffusion Policy</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://ieeexplore.ieee.org/abstract/document/11030084/" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/Digital Twin for Robotic Vision_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://ieeexplore.ieee.org/abstract/document/11030084/" target="_blank" rel="noopener">Digital Twin for Robotic Vision: A Blender-Based Approach</a>
+        </h4>
+        <p class="cite-brief">Digital twins are widely used alongside deep learning techniques for robotic vision, offering a safe and cost-effective means for model training and data collection. However, most existing approaches utilize digital twins solely for offline synthetic data generation, which is typically sufficient for training object detection models but may fall short for more complex tasks such as navigation, path planning, obstacle avoidance, and grasping. Additionally, few methods take real-world camera parameters into account, leading to misalignment between synthetic images and real-world camera views. A key challenge in training deep learning models with synthetic data is sim-to-real transfer. Ensuring precise alignment between synthetic and real images not only enhances the realism of synthetic data but also enables automatic annotation of real-world images, further improving sim-to-real performance. In this paper, we present a Blenderbased digital twin for deep learning-driven robotic vision. Our approach supports real-time updates to the virtual environment and incorporates real-world camera parameters, facilitating the creation of datasets that enhance sim-to-real transfer for deep learning models.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">Digital Twin</span><span class="tag">Robotic Vision</span><span class="tag">Sim-to-Real Transfer</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://search.proquest.com/openview/838ae5ea5f18cc1e92bd879b3aaf2429/1?pq-origsite=gscholar&cbl=18750&diss=y" target="_blank" rel="noopener">
+        <img src="../img/tab_EV_img/GSWorld_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://search.proquest.com/openview/838ae5ea5f18cc1e92bd879b3aaf2429/1?pq-origsite=gscholar&cbl=18750&diss=y" target="_blank" rel="noopener">GSWorld: Closed-Loop Photo-Realistic Simulation Suite for Robotic Manipulation</a>
+        </h4>
+        <p class="cite-brief">This paper builds GSWorld, a robust photo-realistic simulator for robotics manipulation by combining 3D Gaussian Splatting with physics engines. Our framework advocates `closing the loop' of developing manipulation policies with reproducible evaluation of policies learned from real-robot data and automated photorealistic data collection without using real robots. To enable photo-realistic rendering of diverse scenes, we propose a new asset format, which we term GSDF (Gaussian Scene Description File), that infuses Gaussian-on-Mesh representation with robot URDF and other objects. With a streamlined reconstruction pipeline, we curate a database of GSDF containing 3 robot embodiments for single-arm and bimanual manipulation as well as 29 objects. Combining GSDF with physics engines, we demonstrate several immediate interesting iii applications: (1) learning zero-shot sim2real pixel-to-action manipulation policy with photo-realistic rendering (2) reproducible benchmarking of real-robot manipulation policies in simulation, and (3) automated high-quality DAGGER data collection for adapting policies to deployment environments. We plan to open-source both the GSDF assets and code</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">GSWorld</span><span class="tag">3D Gaussian Splatting</span><span class="tag">Photo-Realistic Simulation</span>
+        </div>
+      </div>
+    </article>
+    
+  </section>
+</body>
+</html>

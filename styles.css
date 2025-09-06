@@ -1,0 +1,358 @@
+/* ====================================================================
+   0) Design Tokens
+   ==================================================================== */
+:root {
+  --bg: #f7f7fb;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #64748b;
+  --line: #e5e7eb;
+  --brand: #2563eb;
+  --chip: #eef2ff;
+  --chip-border: #c7d2fe;
+  --radius: 14px;
+  --shadow: 0 10px 24px rgba(2, 6, 23, .06);
+}
+
+/* ====================================================================
+   1) Resets & Base
+   ==================================================================== */
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  padding: 28px;
+  color: var(--text);
+  background: var(--bg);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+/* ====================================================================
+   2) A11y & Core Links
+   ==================================================================== */
+a {
+  color: var(--brand);
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+a:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 2px;
+}
+
+/* 低动态偏好：去除多余动效抖动，但保留必要过渡 */
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
+
+/* 细分横线 */
+.divider {
+  height: 1px;
+  margin: 22px 0;
+  background: var(--line);
+  border: none;
+}
+
+/* ====================================================================
+   3) Page Header
+   ==================================================================== */
+.page-head { margin-bottom: 10px; }
+
+.page-title {
+  margin: 0 0 6px;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: .2px;
+}
+
+.page-subtitle {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* ====================================================================
+   4) Paper Hero
+   ==================================================================== */
+.paper-hero {
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+
+  padding: 16px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* -- Stacked Variant (image top, text center) -- */
+.paper-hero--stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  text-align: center;
+}
+
+.paper-hero--stack .thumb {
+  display: inline-block;      /* 用 div 包裹时让它自适应 */
+  overflow: hidden;
+
+  border-radius: 12px;
+}
+
+/* 让图片显示为原始大小 */
+.paper-hero--stack .thumb img {
+  display: block;
+  width: auto;    /* 根据图片本身宽度 */
+  height: auto;   /* 根据图片本身高度 */
+  max-width: 100%; /* 避免超出容器 */
+}
+
+.paper-title {
+  margin: 24px 0 15px;   /* 上 20px，下 12px */
+  font-size: 28px;       /* 字号更大 */
+  font-weight: 800;      /* 保持加粗 */
+}
+
+.authors {
+  margin: 2px 0 10px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.desc {
+  margin: 4px 0 10px;
+  max-width: 820px;
+  font-size: 15px;
+}
+
+.linkbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.chip {
+  display: inline-flex;       /* 让图标和文字对齐 */
+  align-items: center;
+  gap: 6px;                   /* 图标和文字之间的间距 */
+
+  padding: 10px 18px;         /* 内边距更大 */
+  font-size: 18px;            /* 字号比原来大一点 */
+  font-weight: 700;
+
+  color: #15034d;
+  background: var(--chip);
+  border: 1px solid var(--chip-border);
+  border-radius: 999px;
+
+  transition: transform .15s ease, filter .15s ease;
+}
+
+.chip:hover { text-decoration: none; filter: brightness(.97); }
+.chip:active { transform: scale(.96); }
+
+/* ====================================================================
+   5) Section Top (Title & Tabs)
+   ==================================================================== */
+.section-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+
+  margin: 4px 0 8px;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 24px;
+  letter-spacing: .2px;
+}
+
+/* -- Version Switcher Tabs -- */
+.switcher {
+  display: flex;
+  gap: 14px;
+}
+
+.tab {
+  min-width: 140px;
+  padding: 12px 20px;
+
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+  background: linear-gradient(145deg, #f9fafb, #f3f4f6);
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  cursor: pointer;
+
+  transition: all .25s ease;
+}
+
+.tab:hover {
+  background: linear-gradient(145deg, #e0f2fe, #f0f9ff);
+  border-color: #93c5fd;
+}
+
+.tab.active {
+  color: #fff;
+  background: linear-gradient(145deg, #2563eb, #1d4ed8);
+  border-color: #1d4ed8;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, .35);
+}
+
+.tab:focus-visible { outline: 3px solid #93c5fd; outline-offset: 2px; }
+/* ====================================================================
+   6) Version Sections
+   ==================================================================== */
+.version-section { display: none; }
+.version-section.active { display: block; }
+
+.version-badge {
+  margin: 8px 0 10px;
+  color: #1f2937;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+/* ====================================================================
+   7) Citation List & Cards
+   ==================================================================== */
+.cite-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* -- Card -- */
+.cite-card {
+  display: flex;
+  align-items: stretch;       /* 关键①：左右等高 */
+  gap: 14px;
+
+  width: 100%;
+  padding: 12px;
+
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+
+  transition: transform .16s ease, box-shadow .16s ease;
+}
+.cite-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(2,6,23,.10);
+}
+
+/* 缩略图 */
+.cite-card .thumb {
+  flex: 0 0 168px;
+  width: 168px;
+  min-width: 168px;
+  height: 116px;
+
+  overflow: hidden;
+  background: #e5e7eb;
+  border-radius: 10px;
+}
+.cite-card .thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 内容列 */
+.cite-card .content {
+  flex: 1;
+  min-width: 0;
+
+  display: flex;              /* 关键②：列布局 */
+  flex-direction: column;
+}
+
+.cite-title {
+  margin: 0 0 6px;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.cite-brief {
+  margin: 0;
+  color: #374151;
+  font-size: 14px;
+  display: -webkit-box;           /* 弹性伸缩盒子模型 */
+  -webkit-box-orient: vertical;   /* 垂直排列子元素 */
+  -webkit-line-clamp: 2;          /* 限制显示 2 行 */
+  overflow: hidden;               /* 超出的内容隐藏 */
+  text-overflow: ellipsis;        /* 末尾用省略号表示 */
+}
+
+/* 标签行：贴底对齐 */
+.tagbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin-top: auto;           /* 关键③：把标签条推到底部 */
+  padding-top: 8px;           /* 与上文留点间距 */
+}
+.tag {
+  padding: 4px 8px;
+
+  color: #374151;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+
+  font-size: 12px;
+}
+
+/* ====================================================================
+   8) Footer
+   ==================================================================== */
+.footer {
+  margin: 28px 0 8px;
+  color: var(--muted);
+  font-size: 12px;
+  text-align: center;
+}
+
+/* ====================================================================
+   9) Responsive (≤ 640px)
+   ==================================================================== */
+@media (max-width: 640px) {
+  body { padding: 18px; }
+
+  .paper-hero { padding: 14px; }
+  .paper-hero .thumb { width: 100%; min-width: 0; height: auto; }
+
+  .cite-card {
+    flex-direction: column;
+    align-items: initial;
+  }
+  .cite-card .thumb {
+    width: 100%;
+    min-width: 0;
+    height: 180px;
+  }
+
+  /* 移动端不强制“底对齐”，避免留白 */
+  .cite-card .content { display: block; }
+  .tagbar { margin-top: 8px; padding-top: 0; }
+}

@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>card</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <section class="card-list">
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2506.23351" target="_blank" rel="noopener">
+        <img src="..\img\tab_v2.0_img\Benchmarking Generalizable Bimanual Manipulation_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2506.23351" target="_blank" rel="noopener">Benchmarking Generalizable Bimanual Manipulation: RoboTwin Dual-Arm Collaboration Challenge at CVPR 2025 MEIS Workshop</a>
+        </h4>
+        <p class="cite-brief">Embodied Artificial Intelligence (Embodied AI) is an emerging frontier in robotics, driven by the need for autonomous systems that can perceive, reason, and act in complex physical environments. While single-arm systems have shown strong task performance, collaborative dual-arm systems are essential for handling more intricate tasks involving rigid, deformable, and tactile-sensitive objects. To advance this goal, we launched the RoboTwin Dual-Arm Collaboration Challenge at the 2nd MEIS Workshop, CVPR 2025. Built on the RoboTwin Simulation platform (1.0 and 2.0) and the AgileX COBOT-Magic Robot platform, the competition consisted of three stages: Simulation Round 1, Simulation Round 2, and a final Real-World Round. Participants totally tackled 17 dual-arm manipulation tasks, covering rigid, deformable, and tactile-based scenarios. The challenge attracted 64 global teams and over 400 participants, producing top-performing solutions like SEM and AnchorDP3 and generating valuable insights into generalizable bimanual policy learning. This report outlines the competition setup, task design, evaluation methodology, key findings and future direction, aiming to support future research on robust and generalizable bimanual manipulation policies. The Challenge Webpage is available at this https URL.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">Embodied AI</span><span class="tag">Dual-Arm Manipulation</span><span class="tag">RoboTwin Challenge</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2507.23523" target="_blank" rel="noopener">
+        <img src="..\img\tab_v2.0_img\H-RDT_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2507.23523" target="_blank" rel="noopener">H-RDT: Human Manipulation Enhanced Bimanual Robotic Manipulation</a>
+        </h4>
+        <p class="cite-brief">Imitation learning for robotic manipulation faces a fundamental challenge: the scarcity of large-scale, high-quality robot demonstration data. Recent robotic foundation models often pre-train on cross-embodiment robot datasets to increase data scale, while they face significant limitations as the diverse morphologies and action spaces across different robot embodiments make unified training challenging. In this paper, we present H-RDT (Human to Robotics Diffusion Transformer), a novel approach that leverages human manipulation data to enhance robot manipulation capabilities. Our key insight is that large-scale egocentric human manipulation videos with paired 3D hand pose annotations provide rich behavioral priors that capture natural manipulation strategies and can benefit robotic policy learning. We introduce a two-stage training paradigm: (1) pre-training on large-scale egocentric human manipulation data, and (2) cross-embodiment fine-tuning on robot-specific data with modular action encoders and decoders. Built on a diffusion transformer architecture with 2B parameters, H-RDT uses flow matching to model complex action distributions. Extensive evaluations encompassing both simulation and real-world experiments, single-task and multitask scenarios, as well as few-shot learning and robustness assessments, demonstrate that H-RDT outperforms training from scratch and existing state-of-the-art methods, including Pi0 and RDT, achieving significant improvements of 13.9% and 40.5% over training from scratch in simulation and real-world experiments, respectively. The results validate our core hypothesis that human manipulation data can serve as a powerful foundation for learning bimanual robotic manipulation policies.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">Imitation Learning</span><span class="tag">H-RDT</span><span class="tag">Human-to-Robot</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2508.02629" target="_blank" rel="noopener">
+        <img src="..\img\tab_v2.0_img\HyCodePolicy.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2508.02629" target="_blank" rel="noopener">HyCodePolicy: Hybrid Language Controllers for Multimodal Monitoring and Decision in Embodied Agents</a>
+        </h4>
+        <p class="cite-brief">Recent advances in multimodal large language models (MLLMs) have enabled richer perceptual grounding for code policy generation in embodied agents. However, most existing systems lack effective mechanisms to adaptively monitor policy execution and repair codes during task completion. In this work, we introduce HyCodePolicy, a hybrid language-based control framework that systematically integrates code synthesis, geometric grounding, perceptual monitoring, and iterative repair into a closed-loop programming cycle for embodied agents. Technically, given a natural language instruction, our system first decomposes it into subgoals and generates an initial executable program grounded in object-centric geometric primitives. The program is then executed in simulation, while a vision-language model (VLM) observes selected checkpoints to detect and localize execution failures and infer failure reasons. By fusing structured execution traces capturing program-level events with VLM-based perceptual feedback, HyCodePolicy infers failure causes and repairs programs. This hybrid dual feedback mechanism enables self-correcting program synthesis with minimal human supervision. Our results demonstrate that HyCodePolicy significantly improves the robustness and sample efficiency of robot manipulation policies, offering a scalable strategy for integrating multimodal reasoning into autonomous decision-making pipelines.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">HyCodePolicy</span><span class="tag">Code Policy Generation</span><span class="tag">Embodied Agents</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://www.techrxiv.org/doi/full/10.36227/techrxiv.175502755.53627529" target="_blank" rel="noopener">
+        <img src="..\img\tab_v2.0_img\Vision-Language-Action Models for Robotics_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://www.techrxiv.org/doi/full/10.36227/techrxiv.175502755.53627529" target="_blank" rel="noopener">Vision-Language-Action Models for Robotics: A Review Towards Real-World Applications</a>
+        </h4>
+        <p class="cite-brief">Amid growing efforts to leverage advances in large language models (LLMs) and vision-language models (VLMs) for robotics, Vision-Language-Action (VLA) models have recently gained significant attention. By unifying vision, language, and action data at scale, which have traditionally been studied separately, VLA models aim to learn policies that generalise across diverse tasks, objects, embodiments, and environments. This generalisation capability is expected to enable robots to solve novel downstream tasks with minimal or no additional task-specific data, facilitating more flexible and scalable realworld deployment. Unlike previous surveys that focus narrowly on action representations or high-level model architectures, this work offers a comprehensive, full-stack review, integrating both software and hardware components of VLA systems. In particular, this paper provides a systematic review of VLAs, covering their strategy and architectural transition, architectures and building blocks, modality-specific processing techniques, and learning paradigms. In addition, to support the deployment of VLAs in real-world robotic applications, we also review commonly used robot platforms, data collection strategies, publicly available datasets, data augmentation methods, and evaluation benchmarks. Throughout this comprehensive survey, this paper aims to offer practical guidance for the robotics community in applying VLAs to real-world robotic systems. All references categorized by training approach, evaluation method, modality, and dataset are available in the table on our project website: https://vla-survey.github.io.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">VLA Models</span><span class="tag">Robotics Generalisation</span><span class="tag">Full-Stack Systems</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2508.15201" target="_blank" rel="noopener">
+        <img src="..\img\tab_v2.0_img\Survey of Vision-Language-Action Models_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2508.15201" target="_blank" rel="noopener">Survey of Vision-Language-Action Models for Embodied Manipulation</a>
+        </h4>
+        <p class="cite-brief">Embodied intelligence systems, which enhance agent capabilities through continuous environment interactions, have garnered significant attention from both academia and industry. Vision-Language-Action models, inspired by advancements in large foundation models, serve as universal robotic control frameworks that substantially improve agent-environment interaction capabilities in embodied intelligence systems. This expansion has broadened application scenarios for embodied AI robots. This survey comprehensively reviews VLA models for embodied manipulation. Firstly, it chronicles the developmental trajectory of VLA architectures. Subsequently, we conduct a detailed analysis of current research across 5 critical dimensions: VLA model structures, training datasets, pre-training methods, post-training methods, and model evaluation. Finally, we synthesize key challenges in VLA development and real-world deployment, while outlining promising future research directions.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">Embodied Intelligence</span><span class="tag">VLA Models</span><span class="tag">Robotic Manipulation</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://www.sciencedirect.com/science/article/pii/S2949855425000516" target="_blank" rel="noopener">
+        <img src="..\img\tab_v2.0_img\Agentic AI_img.jpg" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://www.sciencedirect.com/science/article/pii/S2949855425000516" target="_blank" rel="noopener">Agentic AI: The age of reasoning—A review</a>
+        </h4>
+        <p class="cite-brief">Artificial intelligence has experienced a significant boom with the emergence of agentic AI, where autonomous agents are increasingly replacing human intervention, enabling systems to perceive, reason, and act independently to achieve specific goals. Despite its transformative potential, comprehensive information on agentic AI remains scarce in the literature. This paper provides the first comprehensive review of agentic AI, focusing on its evolution and three core aspects: patterns, types, and environments. The evolution of agentic AI is traced through five phases to the current era of multi-modal and collaborative agents, driven by advancements in reinforcement learning, neural networks, and large language models (LLMs). Five key patterns: tool use, reflection, ReAct, planning, and multi-agent collaboration (MAC) define how agentic AI systems interact and process tasks. These systems are categorized into seven categories, each tailored for specific operational styles and autonomy in decision making. The environments in which these agents operate are classified as static, dynamic, fully observable, partially observable, deterministic, stochastic, single-agent, and multi-agent, emphasizing the impact of environmental complexity on agent behavior. Agentic AI has revolutionized systems through autonomous decision making and resource optimization, yet challenges persist in aligning AI with human values, ensuring adaptability, and addressing ethical constraints. Future research focuses on multidomain agents, human-AI collaboration, and self-improving systems. This work provides researchers, practitioners, and policymakers with a structured approach to understanding and advancing the rapidly evolving landscape of agentic AI systems.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">Agentic AI</span><span class="tag">Autonomous systems</span><span class="tag">LLMs</span>
+        </div>
+      </div>
+    </article>
+    
+    <article class="cite-card">
+      <a class="thumb" href="https://arxiv.org/abs/2509.01819" target="_blank" rel="noopener">
+        <img src="..\img\tab_v2.0_img\ManiFlow_img.png" alt="cover image" />
+      </a>
+      <div class="content">
+        <h4 class="cite-title">
+          <a href="https://arxiv.org/abs/2509.01819" target="_blank" rel="noopener">ManiFlow: A General Robot Manipulation Policy via Consistency Flow Training</a>
+        </h4>
+        <p class="cite-brief">This paper introduces ManiFlow, a visuomotor imitation learning policy for general robot manipulation that generates precise, high-dimensional actions conditioned on diverse visual, language and proprioceptive inputs. We leverage flow matching with consistency training to enable high-quality dexterous action generation in just 1-2 inference steps. To handle diverse input modalities efficiently, we propose DiT-X, a diffusion transformer architecture with adaptive cross-attention and AdaLN-Zero conditioning that enables fine-grained feature interactions between action tokens and multi-modal observations. ManiFlow demonstrates consistent improvements across diverse simulation benchmarks and nearly doubles success rates on real-world tasks across single-arm, bimanual, and humanoid robot setups with increasing dexterity. The extensive evaluation further demonstrates the strong robustness and generalizability of ManiFlow to novel objects and background changes, and highlights its strong scaling capability with larger-scale datasets. Our website: this http URL.</p>
+        <div class="tagbar" aria-label="tags">
+          <span class="tag">ManiFlow</span><span class="tag">Imitation Learning</span><span class="tag">Visuomotor Policy</span>
+        </div>
+      </div>
+    </article>
+    
+  </section>
+</body>
+</html>
