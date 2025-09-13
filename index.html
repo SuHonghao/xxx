@@ -6,13 +6,6 @@
   <title>RoboTwin Connect</title>
 
   <link rel="stylesheet" href="styles.css" />
-  <style>
-    /* 关键：仅激活面板可见 */
-    .tabpanel { display: none; }
-    .tabpanel.active { display: block; }
-    /* 可选：tab 选中态样式占位 */
-    .tab.active { font-weight: 700; }
-  </style>
 </head>
 
 <body>
@@ -26,10 +19,9 @@
     </header>
 
     <main id="main" tabindex="-1">
-      <!-- ① 论文简介 -->
+      <!-- 论文简介 -->
       <section class="paper-hero paper-hero--stack" aria-labelledby="paper-title">
         <div class="thumb">
-          <!-- 注意：用正斜杠路径 -->
           <img src="img/title_img/robotwin-text-logo.jpg" alt="robotwin-text-logo" />
         </div>
         <h2 id="paper-title" class="paper-title">
@@ -48,54 +40,12 @@
 
       <hr class="divider" />
 
-      <!-- ② 引用论文（含版本切换） -->
+      <!-- 引用论文 2.0 -->
       <section aria-label="Citing Papers">
         <div class="section-top">
-          <h2 class="section-title">Citing Papers</h2>
-
-          <!-- 版本切换（Tabs） -->
-          <div class="switcher" role="tablist" aria-label="Version Switcher">
-            <button
-              id="tab20"
-              class="tab active"
-              type="button"
-              role="tab"
-              aria-selected="true"
-              aria-controls="panel20"
-            >Version 2.0</button>
-
-            <button
-              id="tab10"
-              class="tab"
-              type="button"
-              role="tab"
-              aria-selected="false"
-              aria-controls="panel10"
-            >Version 1.0</button>
-
-            <button
-              id="tabEV"
-              class="tab"
-              type="button"
-              role="tab"
-              aria-selected="false"
-              aria-controls="panelEV"
-            >Early Version</button>
-          </div>
+          <h2 class="section-title">Citing Papers (Version 2.0)</h2>
         </div>
-
-        <!-- 面板容器：默认仅 2.0 激活 -->
-        <div id="panel20" class="tabpanel active" role="tabpanel" aria-labelledby="tab20">
-          <!-- 首次进入时由 app.js 懒加载 generate_cards/Version_2.0/card_v2.0.html -->
-        </div>
-
-        <div id="panel10" class="tabpanel" role="tabpanel" aria-labelledby="tab10">
-          <!-- 点击 1.0 时懒加载 generate_cards/Version_1.0/card_v1.0.html -->
-        </div>
-
-        <div id="panelEV" class="tabpanel" role="tabpanel" aria-labelledby="tabEV">
-          <!-- 点击 Early Version 时懒加载 generate_cards/Early_Version/card_ev.html -->
-        </div>
+        <div id="panel20" class="tabpanel active"></div>
       </section>
     </main>
 
@@ -104,7 +54,6 @@
     </footer>
   </div>
 
-  <!-- 独立脚本 -->
   <script src="app.js"></script>
 </body>
 </html>
